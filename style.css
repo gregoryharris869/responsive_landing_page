@@ -76,3 +76,69 @@ body {
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
+
+.home__cta:hover {
+  background-color: var(--light001);
+  color: var(--dark001);
+}
+
+.home__cta:focus,
+.home__cta:active {
+  background-color: var(--light001);
+  color: var(--dark001);
+  outline: 5px solid var(--red001);
+}
+
+/* card section */
+
+.home__cards {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px;
+}
+
+.group-one {
+  grid-column: 1 / span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-one .home__card--square {
+  background-image: url(./img/marques-brownlee.jpg);
+}
+
+.group-one .home__card--large {
+  background-image: url(./img/tech-me-out.jpg);
+}
+
+.group-two {
+  grid-column: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-two .home__card--square {
+  background-image: url(./img/peter-mckinnon.jpg);
+}
+
+.group-two .home__card--large {
+  background-image: url(./img/ijustine.jpg);
+}
+
+.home__card {
+  margin: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--dark001);
+}
+
+.home__card header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
